@@ -1,0 +1,14 @@
+.elem-one,
+.elem-two{
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+}
+
+.elem-one{
+    background-color: black;
+    color: white;
+}
+
+.elem-two{
+    background-color: yellow;
+}
