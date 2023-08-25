@@ -1,0 +1,20 @@
+.odd-elem{
+    background-color:rgb(255, 143, 143);
+    font-family: 'Verdana', 'DejaVu Sans', 'sans-serif';
+}
+
+.odd-elem.third{
+    font-size: 24px;
+}
+
+#elem-two{
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#elem-four{
+    /* a light green background, a font size of 24px, and bold */
+    background-color: rgb(136, 255, 136);
+    font-size: 24px;
+    font-weight: bold;
+}
