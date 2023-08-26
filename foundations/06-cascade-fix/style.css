@@ -42,8 +42,14 @@ div.text {
   font-size: 14px;
 }
 
-div.text .child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
+
+/* .text .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+} */
