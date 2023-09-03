@@ -20,10 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  /* EDITS */
+  
   display: flex;
-  padding: 16px;
   gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -75,24 +75,9 @@ button.cancel {
   color: royalblue;
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  /* gap: 8px; */
-}
-
-.header-group{
-  display: flex;
-  justify-content: space-between;
-}
 
 .header{
-  font-weight: bold;
-  font-size: larger;
-  margin-bottom: 8px;
-}
-
-.bottom-buttons{
-  /* padding-top: 8px; */
-  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
