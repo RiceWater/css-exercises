@@ -7,15 +7,14 @@
   text-align: center;
 
   display: grid;
-  row-gap: 8px;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 2fr 1fr;
+  row-gap: 4px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 0fr 7fr 0fr;
   grid-template-areas: 
   "H H"
   "S N"
   "S A"
   "F F"; 
-
 }
 
 .container div {
@@ -31,19 +30,52 @@
 
   grid-area: H;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   text-align: left;
+  align-items: center;
+}
+
+.menu ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "H1 H2 H3 H4";
+  
+}
+
+.menu li:nth-child(1){
+  grid-area: H1;
+}
+
+.menu ul:nth-child(2){
+  grid-area: H2;
+}
+
+.menu ul:nth-child(3){
+  grid-area: H3;
+}
+
+.menu ul:nth-child(4){
+  grid-area: H4;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
+  text-align: left;
 }
 
 .sidebar {
   background-color: #C50208;
 
   grid-area: S;
+  display: grid;
+  row-gap: 5%;
+
+  align-items: center;
+  
 }
 
 .sidebar .photo {
@@ -68,15 +100,28 @@
   grid-area: N;
 }
 
+.nav ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0fr;
+  align-items: baseline;
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
+  list-style-type: none; 
 }
 
 .article {
   background-color: #bccbde;
 
   grid-area: A;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .article p {
@@ -107,9 +152,11 @@
   background-color: #393f4d;
 
   grid-area: F;
+  display: grid;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+  align-self: center;
 }
